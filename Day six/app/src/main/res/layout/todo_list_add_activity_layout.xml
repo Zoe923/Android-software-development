@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+
+    <EditText
+        android:id="@+id/et_context"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/bg_edit"
+        android:gravity="start|top"
+        android:padding="4dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Priority"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:padding="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/btn_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="high" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/btn_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="medium" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/btn_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="low" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="confirm" />
+
+</LinearLayout>
